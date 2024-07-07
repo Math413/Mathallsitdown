@@ -17,22 +17,36 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 
 
+// /** @type {import('@docusaurus/types').Config} */
+// const config = {
+//   title: 'My Site',
+//   tagline: 'Dinosaurs are cool',
+//   favicon: 'img/favicon.ico',
+
+//   // Set the production url of your site here
+//   url: 'https://1685585993.github.io',
+//   // Set the /<baseUrl>/ pathname under which your site is served
+//   // For GitHub pages deployment, it is often '/<projectName>/'
+//   baseUrl: 'Math-analysis',
+
+//   // GitHub pages deployment config.
+//   // If you aren't using GitHub pages, you don't need these.
+//   organizationName: '1685585993', // Usually your GitHub org/user name.
+//   projectName:  'Math-analysis', // Usually your repo name.
+
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: '数学小课堂',
+  tagline: '卫东辉',
   favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
-  url: 'https://1685585993.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: 'Math-analysis',
+  url: 'https://Math413.github.io',
+  baseUrl: '/Mathallsitdown',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: '1685585993', // Usually your GitHub org/user name.
-  projectName:  'Math-analysis', // Usually your repo name.
+  organizationName: 'Math413', // Usually your GitHub org/user name.
+  projectName:  'Mathallsitdown', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
