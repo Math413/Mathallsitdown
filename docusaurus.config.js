@@ -65,7 +65,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          routeBasePath: "/",
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // remarkPlugins: [math],
@@ -110,24 +111,42 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
+        title: '数学小课堂',
+        // logo: {
+        //   alt: 'My Site Logo',
+        //   src: 'img/logo.svg',
+        // },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "MathematicalAnalysisSidebar",
+            label: "数学分析",
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "MathematicalAnalysisSkillSidebar",
+            label: "数学分析技巧",
           },
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "AdvancedAlgebraSidebar",
+            label: "高等代数",
+          },
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "AdvancedAlgebraskillSidebar",
+            label: "高等代数技巧",
+          },
+          // {to: '/blog', label: 'Blog', position: 'left'},
+          // {
+          //   href: 'https://github.com/facebook/docusaurus',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
